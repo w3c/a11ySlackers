@@ -11,7 +11,7 @@ When you setup your connection, please note the following:
 * Room name is 'w3c/a11ySlackers' (without the quotes);
 * To mention someone in Gitter, prefix their name with an `@`.
 
-## Chatzilla
+### Chatzilla
 
 Follow these steps to connect to IRC via Chatzilla:
 
@@ -19,7 +19,7 @@ Follow these steps to connect to IRC via Chatzilla:
 1. Use the following command to connect: `/sslserver irc.gitter.im:6667 password nickname`
 1. Join the room: `/join w3c/a11ySlackers`
 
-## Colloquy
+### Colloquy
 
 Follow these steps to connect to the WICG Gitter room via IRC:
 
