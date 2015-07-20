@@ -3,6 +3,9 @@ A channel for anyone and everyone to discuss accessible web development. No ques
 
 [![Join the chat at https://gitter.im/w3c/a11ySlackers](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/w3c/a11ySlackers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## Channel Archive
+All [messages logged daily](http://w3c.github.io/a11ySlackers/archives/index.html)
+
 ## Connecting to Gitter over IRC
 Note: the bridge between IRC and Gitter is a beta service provided by Gitter.
 
