@@ -1,5 +1,6 @@
 # [a11ySlackers](https://gitter.im/w3c/a11ySlackers)
-A channel for anyone and everyone to discuss accessible web development 
+A channel for anyone and everyone to discuss accessible web development.
+
 ## Connecting to Gitter over IRC
 Note: the bridge between IRC and Gitter is a beta service provided by Gitter.
 
