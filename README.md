@@ -1,5 +1,8 @@
-# [a11ySlackers](https://gitter.im/w3c/a11ySlackers)
-A channel for anyone and everyone to discuss accessible web development 
+# A11Y Slackers
+A channel for anyone and everyone to discuss accessible web development. No question is too simple or weird, join via Gitter or IRC and have fun!
+
+[![Join the chat at https://gitter.im/w3c/a11ySlackers](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/w3c/a11ySlackers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Connecting to Gitter over IRC
 Note: the bridge between IRC and Gitter is a beta service provided by Gitter.
 
