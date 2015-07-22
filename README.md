@@ -40,3 +40,26 @@ Follow these steps to connect to the WICG Gitter room via IRC:
 1. Add 'w3c/a11ySlackers' to the 'Join Rooms' list
 1. Click on 'Connect'
 
+### Pidgin
+
+Follow these steps to connect to the WICG Gitter room via IRC:
+
+1. Open Pidgin and go to the Buddy List
+1. Open your "Accounts" window. (Accounts > Manage Accounts, or `ctrl+A`)
+1. Click the "Add..." button (`alt+A`)
+1. From the "Protocol" drop-down, select IRC. (`alt+A` and `space` to reach and activate the drop-down)
+1. Fill out your username ([the one Gitter knows](https://irc.gitter.im/))
+1. Set the 'Server' field to `irc.gitter.im`
+1. Fill out your password ([supplied by Gitter](https://irc.gitter.im/))
+1. You can choose to set a local alias.
+1. Go to the "Advanced" tab. (`alt+V`)
+1. Select "Use SSL." (`alt+U`)
+1. Save the connection by clicking "Add." (`alt+A`)
+1. Make sure the room has connected  by looking for a checkmark next to the room in the Accounts window.
+1. Close the Accounts window and go back to the Buddy List.
+1. Open the "Buddies" menu. (`alt+B`)
+1. Select "Add Chat." (press `H`)
+1. From the Account drop-down, select your new  IRC account.
+1. For channel, use 'w3c/a11ySlackers'.
+1. For password, use the Gitter supplied token.
+1. The other fields are optional based on the configuration you would like.
