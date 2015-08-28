@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      A11y Slacker archive 2015-08-27
+    </title>
+    <link href="../../router-archive-chat.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <p>
+      <a href="../../index.html">Archive index</a>
+    </p>
+    <h1>
+      <a href="https://gitter.im/w3c/a11ySlackers"><img src="../../a11yslackers2.png" alt="A11y Slackers"></a> <span>Gitter Channel Archive 27th of August 2015</span>
+    </h1>
+    <blockquote>
+      <strong>What fresh hell is THIS now?</strong> - <cite>Patrick Lauke</cite>
+    </blockquote>
+    <div id="content-wrapper" class="trpContentPanel">
+      <div id="chat-container">
+        <ol>
+          <li>
+            <div class="chat-item model-id-55de628168a150880e91267d burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      01:06
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      There is a rising popular technique where a <code>&lt;label&gt;</code> is styled to mimic the appearance of a <code>placeholder</code> attribute.
+                    </p>
+                    <pre>
+<code class="html"><span class="tag">&lt;<span class="title">label</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>Search the site<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"search"</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span></code>
+</pre>
+                    <p>
+                      An issue arises where “Search the site” is repeated twice, once for the <code>&lt;label&gt;</code> or <code>&lt;span&gt;</code> and then again for the <code>&lt;input&gt;</code>. Using <code>&lt;span aria-hidden="true"&gt;</code> makes it so the label is not read at all, but then using <code>&lt;input type="search" aria-label="Search the site"&gt;</code> resolves this.
+                    </p>
+                    <pre>
+<code class="html"><span class="tag">&lt;<span class="title">label</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">aria-hidden</span>=<span class="value">"true"</span>&gt;</span>Search the site<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">“search”</span> <span class="attribute">aria-label</span>=<span class="value">"Search the site"</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span></code>
+</pre>
+                    <p>
+                      The tripled redundency in the code recreates the intended experience for the screen reader. Are there better ways to do this?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de6777d42b22ce3e295308 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      01:27
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Well, for now, one way I avoid this redundancy in compiled HTML is to add it via JavaScript.
+                    <pre>
+<code class="html"><span class="tag">&lt;<span class="title">label</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">data-label</span>&gt;</span>Search the site<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"search"</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span></code>
+</pre>
+                    <pre>
+<code class="js"><span class="function"><span class="keyword">function</span> <span class="title">defineAria</span><span class="params">(input)</span> </span>{     <span class="keyword">var</span> label = input.parentElement.querySelector(<span class="string">'[data-label]'</span>);      <span class="keyword">if</span> (label) {         label.setAttribute(<span class="string">'aria-hidden'</span>, <span class="literal">true</span>);         input.setAttribute(<span class="string">'aria-label'</span>, label.innerHTML.replace(<span class="regexp">/&lt;[^\s][^&gt;]*&gt;/g</span>, <span class="string">''</span>));     } }  <span class="built_in">Array</span>.prototype.forEach.call(<span class="built_in">document</span>.querySelectorAll(<span class="string">'button,input,select,textarea'</span>), defineAria);</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de6ef8d42b22ce3e2953c9 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      01:59
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[dsturley, a11y]</strong> why not trade the <code>div</code> for a <code>span</code> and just <code>&lt;div class=“floaty-label-thingy”&gt;&lt;label for=“dingy”&gt;Dingy&lt;/label&gt;&lt;input id=“dingy”&gt;&lt;/div&gt;</code>?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de6f42a001749b2d9573a0 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      02:00
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[dsturley, a11y]</strong> The ID can be auto-generated to avoid collisions
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de7602d42b22ce3e2954a0 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      02:29
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="dsturley" class="mention">@dsturley</span>, thanks - I had it the other way to avoid the id and make sure the container was clickable, but these are weak concerns that can be avoided other ways. I like your solution. Thanks for keeping it simple.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de7a38a001749b2d9574d7 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      02:47
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="dsturley" class="mention">@dsturley</span>, the problem remains that the label is read twice, so JavaScript is still required, but it’s cleaner now using the <code>&lt;div&gt;</code> wrapper as you recommended:
+                    <pre>
+<code class="html"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"search-more"</span>&gt;</span>Search the site<span class="tag">&lt;/<span class="title">label</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"search-more"</span> <span class="attribute">type</span>=<span class="value">"search"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code>
+</pre>
+                    <pre>
+<code class="js"><span class="function"><span class="keyword">function</span> <span class="title">setAriaAttributes</span><span class="params">(input)</span> </span>{     <span class="keyword">if</span> (input.id) {         <span class="keyword">var</span> label = <span class="built_in">document</span>.querySelector(<span class="string">'label[for="'</span> + input.id + <span class="string">'"]'</span>);          <span class="keyword">if</span> (label) {             label.setAttribute(<span class="string">'aria-hidden'</span>, <span class="literal">true</span>);             input.setAttribute(<span class="string">'aria-label'</span>, label.innerHTML.replace(<span class="regexp">/&lt;[^\s][^&gt;]*&gt;/g</span>, <span class="string">''</span>));         }     } }  <span class="built_in">Array</span>.prototype.forEach.call(<span class="built_in">document</span>.querySelectorAll(<span class="string">'button,input,select,textarea'</span>), setAriaAttributes);</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de7bb7b0c2ec8705e7373a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      02:53
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[som, a11y]</strong> What is reading the label twice?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de7c029be7c0820510a7f8 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      02:54
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[som, a11y]</strong> Do you have the same problem if the label is after the input?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de7c4469b48d870e080e2c burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      02:56
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[som, a11y]</strong> e.g:
+                    <pre>
+<code><span class="xml">  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">s</span> <span class="attribute">type</span>=<span class="value">search</span> <span class="attribute">oninput</span>=<span class="value">"this.setAttribute('data-value', this.value);"</span> <span class="attribute">data-value</span>&gt;</span>   <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">s</span>&gt;</span>Search<span class="tag">&lt;/<span class="title">label</span>&gt;</span> <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  /* CSS */ div {   position: relative; } label {   position: absolute;   left: 0.5em;   opacity: 0; } input[data-value=""] + label {   opacity: 0.5; }</span></code>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de834369b48d870e080ec0 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55de73460fc9f982beaeba38 avatar-s offline" style="background-image: url('https://avatars0.githubusercontent.com/cyns?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      cyns
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      03:25
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="stevefaulkner" class="mention">@stevefaulkner</span> have you done (or know of) a recent set of ARIA Browser support test results? My searches aren't turning up anything newer than CR testing. Thx
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de866d69b48d870e080eff burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      03:39
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="som" class="mention">@som</span>, yes the label is then read after the input because it’s still an element that can be navigated to (on VoiceOver with Control+Option+Right Arrow).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55de89afb0c2ec8705e73825 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      03:53
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[som, a11y]</strong> <span data-link-type="mention" data-screen-name="jonathantneal" class="mention">@jonathantneal</span> .. surely that must be intended behaviour then? If VO reads a label followed by the input it is representing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55ded9379be7c0820510b033 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/stevefaulkner?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      09:32
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Whether a label is read before or after the control it labels is not an issue, that is part of the "aural UI" of the screen reader
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55deefd269b48d870e0819d7 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      11:09
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    It seems rigt to attach the label to the input so that it is read once and in conjunction with the input. <span data-link-type="mention" data-screen-name="stevefaulkner" class="mention">@stevefaulkner</span>, are you saying this is unexpected behavior for an aural UI?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55def0b269b48d870e0819fb burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      11:12
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    better question: is reading the label twice expected behaviour?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55def0d94c5de5644ea2078a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      11:13
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Sure. This would be good to know and to share with others, since I could imagine other developers reaching the same conclusion that I did ( that it should be read once )
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55def16469b48d870e081a1f burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      11:15
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I would expect it to be read once if you focus on the input. Being read again if you move yourself further sounds sensible though.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55def175a001749b2d9580e2 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      11:16
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    But if I focus on the input "search search" would sound pretty confuzling.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55def17cd42b22ce3e296125 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      11:16
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I dunno if that's what they meant by "read twice:
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55def17d68a150880e91347e burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      11:16
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    "
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defc9e2dcc927606351c5a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/stevefaulkner?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:03
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Hi <span data-link-type="mention" data-screen-name="cyns" class="mention">@cyns</span> I don't know of any comprehensive ARIA browser implementations tests other than the ARIA CR tests, I did the CR tests for HTML5 CR implicit semantics <a href="http://stevefaulkner.github.io/html-mapping-tests/" rel="nofollow" target="_blank" class="link">http://stevefaulkner.github.io/html-mapping-tests/</a> but that is only a subset against HTML implementation requirements at the time of html5 going to REC
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defd312dcc927606351c6f burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/stevefaulkner?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:06
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="jonathantneal" class="mention">@jonathantneal</span> Label should be read once either before role announced or after see (work in progress) <a href="http://thepaciellogroup.github.io/AT-browser-tests/" rel="nofollow" target="_blank" class="link">http://thepaciellogroup.github.io/AT-browser-tests/</a> for some examples
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defde788e33c7406546d11 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:09
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="jonathantneal" class="mention">@jonathantneal</span> do you mean you would hear this label twice (sorry it's in Dutch) in the form at the bottom of this page <a href="http://www.weps.be/" rel="nofollow" target="_blank" class="link">http://www.weps.be/</a> ?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defe0481e9f62976d05f97 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:09
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    wait I found we do have an English one <a href="http://www.hedgrenwebshop.com/" rel="nofollow" target="_blank" class="link">http://www.hedgrenwebshop.com/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defe1b2dcc927606351c8a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:10
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I’ve got a test page I’ve run through VoiceOver &amp; Browsers and ChromeVox. Now I’m testing Windows.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defe8e81e9f62976d05fac burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:11
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    (the HTML for the input comes from the company who deals with the input results, not me)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defe8e21601e754972dd0d burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:11
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    &lt;label for="mce-EMAIL"&gt;Enter your email address for newsletter subscription&lt;/label&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defe8ed7a6fe28762a8404 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:11
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    This should only read the label once.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defe8f6ee0747649f07969 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:11
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    &lt;input type="email" value="" name="EMAIL" aria-required="true" class="required email" id="mce-EMAIL"&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defebb2dcc927606351c9f burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:12
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Unfortunate that the company who made the form inputs adds aria-invalid to the input the moment you blur that input but haven't filled anything in... maybe you didn't really <em>want</em> the newsletter. But whatever...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defec888e33c7406546d44 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:12
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    It would be nice if I knew how to use commands with JAWS. Right now I have to listen to the whole page read a few times write it down, then listen to it again.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defed9d7a6fe28762a8414 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:13
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    freedom scientific has pages showing the quick nav
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defee0d7a6fe28762a841a burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:13
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    you can quicknav to forms with F
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55deff07d7a6fe28762a8426 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:13
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    and combined with shift you can do next/prev form (or t-&gt;table, or h-&gt;heading etc)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55deff1f88e33c7406546d51 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:14
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    there should be a "Jaws key", a key like Insert usually which you can use for commands...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55deff3421601e754972dd36 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:14
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <a href="http://www.freedomscientific.com/training/Surfs-Up/Quick_Keys.htm" rel="nofollow" target="_blank" class="link">http://www.freedomscientific.com/training/Surfs-Up/Quick_Keys.htm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55deffca6ee0747649f079b1 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:17
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Is there something like a modifer key. ChromeVox’s is <code>Control + Command</code> and VoiceOver’s is <code>Control + Alt</code>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55defffa6ee0747649f079bf burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:18
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    yeah insert is generally jaws' mod key, but I forget how to set your own (lots of people like caps lock)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df035d88e33c7406546dee burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:32
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    In Windows, it doesn’t always do the same thing if you are reading elements aloud versus if you click into them.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df04432dcc927606351d73 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a651b85e0d51bd787b7289 avatar-s offline" style="background-image: url('https://avatars0.githubusercontent.com/Heydon?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Heydon
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:36
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    NVDA + Chrome (latest both) seems utterly borked. As in keypresses totally bizarre etc. Can anyone corroborate?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df04bf21601e754972de25 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:38
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[dsturley, a11y]</strong> <span data-link-type="mention" data-screen-name="jonathantneal" class="mention">@jonathantneal</span> you don’t want <code>aria-label</code> or <code>aria-hidden</code> if you are using a real <code>&lt;label&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df04fd6ee0747649f07a7d burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:39
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    aria-label will override any real labels... but it wouldn't double a label
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df05022dcc927606351d97 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:39
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    or, shouldn't
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df050521601e754972de35 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/StommePoes?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:39
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    unless there's a bug?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df05d088e33c7406546e44 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:42
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Tests: <a href="http://jonathantneal.github.io/rat/tests/label.html" rel="nofollow" target="_blank" class="link">http://jonathantneal.github.io/rat/tests/label.html</a><br>
+                    Results (not yet written up nicely): <a href="http://viewsource.in/jonathantneal.github.io/rat/tests/label.html" rel="nofollow" target="_blank" class="link">http://viewsource.in/jonathantneal.github.io/rat/tests/label.html</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df05e788e33c7406546e46 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      12:43
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    It’s pretty inconsistent.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df1690069069633605ed1b burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a651b85e0d51bd787b7289 avatar-s offline" style="background-image: url('https://avatars0.githubusercontent.com/Heydon?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Heydon
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      13:54
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Hi Jamie!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df3439e40e943746620797 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/stevefaulkner?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      16:00
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="StommePoes" class="mention">@StommePoes</span> note that both required and invalid states are exposed for input with HTML required attribute set (until the validation constraints are met)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df570c7ba498ed43f2ca00 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      18:29
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Is there a role or attribute to identify a link as self referential (like a link pointing to the current page in a navigation)?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df57bb3d0b019620af49c5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      18:32
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[Karl Groves, a11y]</strong> Assistive technologies will announce those links as such.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df57d73d0b019620af49ce burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/jonathantneal?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      18:32
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Thanks, Karl Groves. I wasn’t sure if I should be adding <code>rel=“canonical"</code> or something like that.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df80a533e556c746e34482 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline" style="background-image: url('https://avatars2.githubusercontent.com/stevefaulkner?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      21:27
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <h1>
+                      A11ySlackers chat log 26th August 2015 <a href="http://w3c.github.io/a11ySlackers/archives/2015/08/2015-08-26.html" rel="nofollow" target="_blank" class="link">http://w3c.github.io/a11ySlackers/archives/2015/08/2015-08-26.html</a>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-55df9a5e1b9798c846ec7d1c burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline" style="background-image: url('https://avatars1.githubusercontent.com/zakim-robot?&amp;s=30')" data-original-title=""></div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__time js-chat-item-time'>
+                      23:16
+                    </div>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[blink183, a11y]</strong> JAWS has a Quick Navigation Keys Manager that you can access by pressing insert+f2.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
