@@ -1,0 +1,2649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      A11y Slacker archive 2016-02-29
+    </title>
+    <link href="../../router-archive-chat.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <p>
+      <a href="../../index.html">Archive index</a>
+    </p>
+    <h1>
+      <a href="https://gitter.im/w3c/a11ySlackers"><img src="../../a11yslackers2.png" alt="A11y Slackers"></a> <span>Gitter Channel Archive 29th of February 2016</span>
+    </h1>
+    <blockquote>
+      <strong>What fresh hell is THIS now?</strong> - <cite>Patrick Lauke</cite>
+    </blockquote>
+    <div id="content-wrapper" class="trpContentPanel">
+      <div id="chat-container">
+        <ol>
+          <li>
+            <div class="chat-item model-id-56d3d0109a059be9245f04d0 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/188426?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/188426?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 04:58</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="stevefaulkner" class="mention">@stevefaulkner</span>, the DOM ordering goes <code>&lt;ul class="main"/&gt;&lt;button class="toggle"/&gt;&lt;ul class="overflow/&gt;</code>. I was thinking it should include <code>aria-controls</code> like <code>&lt;button class="toggle" aria-controls="overflow-id"/&gt;&lt;ul class="overflow" id="overflow-id"/&gt;</code> unless you think it’s implied by the focus order (the next focus item would be the first overflow item).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d3e4f44e6a6c1c18ed749f burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 06:28</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Morning folks
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d3eee5d2637aec24d56776 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 07:10</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Mornin
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d3f163b79fb81f187ad88b burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 07:21</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="jonathanneal" class="mention">@jonathanneal</span>: if I recall correctly, aria-controls is only needed if the two elements are separated in the taborder. So let's say you have four buttons that control different hidden menu's. You would want users to be able to navigate to the controlled thing via a keyboard shortcut rather than having to tab around the page—and past the three other buttons.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d3f1fe9b88648d7a08d9d0 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/188426?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/188426?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 07:23</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Excellent. Thanks <span data-link-type="mention" data-screen-name="MichielBijl" class="mention">@MichielBijl</span> for the confirmation. I’ve applied that to the okaynav update I am working on here. Time for sleep. <a href="http://s.codepen.io/jonneal/debug/wGwjZN" rel="nofollow" target="_blank" class="link">http://s.codepen.io/jonneal/debug/wGwjZN</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d3f2d0712bb6033acf5583 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 07:27</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I'll check it out, good night =)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d3f556649ae49a694b3621 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 07:37</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="jonathanneal" class="mention">@jonathanneal</span>: it'll need a label of sorts.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d3f583712bb6033acf5601 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 07:38</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    And would it make sense to close the menu if you tab out of the hidden content and back into the normal menu? I noticed that is what happens if you tab to the main content.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d408694e6a6c1c18ed7c6a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 08:59</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jitendra]</strong> Is it possible to open something in new tab not new window?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d40888d2637aec24d56d37 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 08:59</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Only via user preference as far as I know
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d408e5b0c932986954a067 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 09:01</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    alt=Safari preferences shows option to open pages in new tabs instead of windows. <a href="https://usercontent.irccloud-cdn.com/file/49cl04wB/Screen%20Shot%202016-02-29%20at%2010.00.15.png" rel="nofollow" target="_blank" class="link">https://usercontent.irccloud-cdn.com/file/49cl04wB/Screen%20Shot%202016-02-29%20at%2010.00.15.png</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4534b4e6a6c1c18ed93c2 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:18</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> hello friends. i'm looking for a decent "aria-expanded" tutorial but i'm a bit overwhelmed by all the different writeups out there. is there something that you all would recommend?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d453b380c1170e6db6f804 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:20</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Do you have a specific question about it?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d454279b88648d7a08f754 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:22</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> i've just heard a mention of it as a good way to implement a button that toggles some other control open or closed
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d45465b79fb81f187af627 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:23</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> oh nm i have found <a href="https://www.marcozehe.de/2010/02/10/easy-aria-tip-5-aria-expanded-and-aria-controls/" rel="nofollow" target="_blank" class="link">https://www.marcozehe.de/2010/02/10/easy-aria-tip-5-aria-expanded-and-aria-controls/</a> which looks ok
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4546980c1170e6db6f867 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:23</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> sorry for early-morning laziness!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d454fd9b88648d7a08f7bd burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:26</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jdan]</strong> <span data-link-type="mention" data-screen-name="jergason" class="mention">@jergason</span> bootstrap's dropdowns make good use of aria-expanded (and aria-haspopup) <a href="http://getbootstrap.com/components/#btn-dropdowns" rel="nofollow" target="_blank" class="link">http://getbootstrap.com/components/#btn-dropdowns</a> but don't use aria-controls
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4551380c1170e6db6f8a5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:26</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <a href="https://twitter.com/stevefaulkner/status/704310868364935169" rel="nofollow" target="_blank" class="link">https://twitter.com/stevefaulkner/status/704310868364935169</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4551fb0c932986954b7c1 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:26</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    feedback/input welcome
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d45538712bb6033acf737c burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a6c6975e0d51bd787b7caf avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      powrsurg
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:27</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="jergason" class="mention">@jergason</span> <a href="http://oaa-accessibility.org/" rel="nofollow" target="_blank" class="link">http://oaa-accessibility.org/</a> look here for examples
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4591bb79fb81f187af7e6 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5589601615522ed4b3e27f19 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/188426?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/188426?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jonathantneal
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 14:43</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="MichielBijl" class="mention">@MichielBijl</span>, thanks so much for checking it out. I will definitely add the label to the toggle. I thought it made sense to keep the overflow navigation open as long as you’re in any part of the navigation.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d460b8b0c932986954bc43 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:16</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> jdan: why not user aria-controls?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d460f29a059be9245f2daa burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:17</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jdan]</strong> <span data-link-type="mention" data-screen-name="jergason" class="mention">@jergason</span> oh my apologies, I should've said "but doesn't use aria-controls"
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4610b649ae49a694b56aa burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:17</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jdan]</strong> you can use aria-controls :simple_smile: someone else here can speak on how important they are
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4611c4e6a6c1c18ed9947 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:17</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> ah
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46127b79fb81f187afafc burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:17</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> i thought this was one of those sneaky aria things where the standard is wrong or bad somehow
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4612b649ae49a694b56b8 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:18</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jergason]</strong> and i was getting ready to whine
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d468f99b88648d7a08ffef burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:51</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    good morning
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d469049a059be9245f318a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:51</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    o/
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4691480c1170e6db700f9 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:51</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    thanks for answering my qs last week. I was planning the future of epub a11y in a dark room, so I didn't see until today
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46928712bb6033acf7be9 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:52</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="TzviyaSiegman" class="mention">@TzviyaSiegman</span>: Use a red lamp ;-)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4693db0c932986954bfb2 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:52</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Oh wait, that's just for photo development
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4694b9a059be9245f31a6 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:52</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    new question: if I have an image with no caption in a book or journal, what is the recommendation for &lt;figcaption&gt; wrt to a11y?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4697e649ae49a694b5a6b burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 15:53</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    i had been excluding it completely, but I heard a rec to include an empty &lt;figcaption&gt; as I would a null alt, where appropriate
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46cd280c1170e6db70290 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:07</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    if there is no caption, don't include &lt;figcaption&gt; assuming there is an alt?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46ce2b0c932986954c12a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:08</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Should it even be a <code>figure</code>?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46d20712bb6033acf7d89 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:09</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    figure not required <a href="http://w3c.github.io/html/grouping-content.html#the-figure-element" rel="nofollow" target="_blank" class="link">http://w3c.github.io/html/grouping-content.html#the-figure-element</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46d499a059be9245f331c burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:09</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    aural UI wise, figure on its own is not exposed to user
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46d4f80c1170e6db702be burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:09</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="MichielBijl" class="mention">@MichielBijl</span> <span data-link-type="mention" data-screen-name="stevefaulkner" class="mention">@stevefaulkner</span> thanks. We are using &lt;figure&gt; for our own sanity. Also it sometimes wraps more than 1 &lt;img&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46d86b79fb81f187b003e burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:10</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="TzviyaSiegman" class="mention">@TzviyaSiegman</span> and that is fine, but &lt;img&gt; needs an alt or at least a non empty &lt;figcaption&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d46d9a9a059be9245f3339 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:11</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    yup, thanks
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d471fe712bb6033acf7f94 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:29</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[felix.berger]</strong> i'd use a plain img / if decorational with empy alt attribute, if content related with descriptional alt information ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d47370b0c932986954c3c9 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:36</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    even with a non-empty figcaption, if you've got images without alt, they either won't exist (JAWS/NVDA), will exist with no other information (Orca), or will get their filenames read out (VO).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d47380649ae49a694b5e31 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:36</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    bizaare. So even with a nonempty figcaption, use some alts.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d473849a059be9245f35b1 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:36</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    for sanity.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d474f09a059be9245f364e burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:42</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <a href="http://stommepoes.nl/work/figures.html" rel="nofollow" target="_blank" class="link">http://stommepoes.nl/work/figures.html</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d475d1712bb6033acf8135 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:46</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I am planning alt for all of these!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4778b712bb6033acf8200 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 16:53</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    woots.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4818cb0c932986954c902 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 17:36</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="StommePoes" class="mention">@StommePoes</span>, have you published analysis for other elements?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d48439b79fb81f187b0981 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 17:47</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="TheOneWithTheHat" class="mention">@TheOneWithTheHat</span>, you mean like other elements within figure?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4847780c1170e6db70bba burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 17:48</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="MichielBijl" class="mention">@MichielBijl</span> , good memory! i'm interested in seeing breakdown like that for a lot of elements, not just figures.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d48495b0c932986954ca13 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 17:49</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    ;)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d484ac712bb6033acf86d6 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 17:49</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Yeah, that would be interesting, there is TPG's aural HTML thing, let me fetch you the link
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d484c14e6a6c1c18eda7f8 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 17:49</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <a href="http://thepaciellogroup.github.io/AT-browser-tests/" rel="nofollow" target="_blank" class="link">http://thepaciellogroup.github.io/AT-browser-tests/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d484df712bb6033acf86ed burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 17:50</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    cool, thanks!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4875880c1170e6db70cc4 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 18:00</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Tzviya no, I haven't. Other than Michiel's stuff
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d48784b79fb81f187b0aca burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 18:01</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    This should keep me busy for a few hours
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49647b0c932986954d097 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a6c6975e0d51bd787b7caf avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      powrsurg
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:04</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    am I alone in getting a headache whenever they test with a screen reader?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d496d59a059be9245f43b5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:07</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Set it to Lee, solves everything
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4975c649ae49a694b6bbf burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a6c6975e0d51bd787b7caf avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      powrsurg
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:09</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    ????
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d499b3b0c932986954d1fd burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:19</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Use a more natural voice is what I'm saying :)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49b9c712bb6033acf9010 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:27</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Hi all
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49c50b79fb81f187b1369 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:30</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I've got a org structure question - for those of you that work for orgs that have a 'compliance offiicer' role, how does that role review &amp; approve everything that hits the web?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49d289a059be9245f4643 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a6c6975e0d51bd787b7caf avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      powrsurg
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:34</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I had no idea you could even do that ... and now I love it :p
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49d2fb79fb81f187b13ba burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a6c6975e0d51bd787b7caf avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      powrsurg
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:34</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Zac is so cute
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49db0712bb6033acf90e5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:36</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> At some point that becomes unsustainable for one person.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49e029b88648d7a091519 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a6c6975e0d51bd787b7caf avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      powrsurg
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:37</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    a decade+ ago when I was working at my college's web department we had to run every change through marketing. Eventually we just stopped and they never noticed or cared
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49e37b0c932986954d3ca burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:38</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> Yeah, being a roadblock is a good way to become uninvited to meetings. :wink:
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d49f519b88648d7a09159e burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a6c6975e0d51bd787b7caf avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/190563?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      powrsurg
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:43</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    To accomplish what you're looking for you'd need a CMS that has some type of versioning and notifications of revisions. It will get to be a huge pain in the butt as your org scales up.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a09a649ae49a694b6f61 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:48</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    All good points. I'm referencing the DOJ recommendations of a compliance officer, and just curious how others have implemented
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a0c2b0c932986954d4c3 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:49</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Through a CMS and a pattern library, many a11y considerations get 'baked in', but then there's cruft that has to be reviewed somewhere somehow
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a1cb80c1170e6db717bf burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:53</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> Jason, chances are that person’s role would be involved more in policies, procedures, training, lending subject matter expertise, etc.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a1f9712bb6033acf9290 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:54</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> That’s not to say they wouldn’t be involved in testing, but rather that testing would more likely be reserved for special cases - or for a team of people
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a209b79fb81f187b158d burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:54</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    thanks - that gives me a better idea of intent
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a228c59a1f2357f1ffe4 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:55</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    behind the compliance officer role.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a22a712bb6033acf92a3 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:55</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> i’ve seen very large companies have a dozen SMEs on hand for testing, training, etc.. I’ve seen 2
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a30cb0c932986954d5cd burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:59</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      Is one of these pages more relevant than the other?
+                    </p>
+                    <p>
+                      1) <a href="https://www.w3.org/TR/html-markup/hr.html#hr" rel="nofollow" target="_blank" class="link">https://www.w3.org/TR/html-markup/hr.html#hr</a><br>
+                      2) <a href="https://www.w3.org/TR/html5/grouping-content.html#the-hr-element" rel="nofollow" target="_blank" class="link">https://www.w3.org/TR/html5/grouping-content.html#the-hr-element</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a31eb0c932986954d5d2 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 19:59</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I'm trying to find the semantic use for a <code>hr</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a36a712bb6033acf9329 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:00</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    The second link seems to be more up-to-date with ARIA-roles
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a37a9b88648d7a09176a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:00</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <a href="https://www.w3.org/TR/html-markup/" rel="nofollow" target="_blank" class="link">https://www.w3.org/TR/html-markup/</a> avoid this
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a38e80c1170e6db7188d burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:01</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="jasonday" class="mention">@jasonday</span> , somehow I am becoming the compliance office, despite my lack of skill or time. I am teaching myself to use AT
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3948cfda8823613c807 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:01</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    its out of date - like ancient
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3a580c1170e6db71899 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:01</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="stevefaulkner" class="mention">@stevefaulkner</span> Thanks for confirming my gut feeling.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3a99b88648d7a09177e burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:01</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    steve can't we get a FLAMING RED WARNING on that?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3be9b88648d7a091785 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:02</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    because if it's the FIRST thing you stumble across, one may not realise there's a Recommendation version of that out there somewhere
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3cc712bb6033acf9355 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:02</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    i want to yes its - <span data-link-type="mention" data-screen-name="sideshowbarker" class="mention">@sideshowbarker</span>'s fault
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3ddc59a1f2357f200bc burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:02</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    people goooooogle this stuff
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3dfc59a1f2357f200bd burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:02</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Or redirect, or HTTP gone
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3ec80c1170e6db718c3 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:02</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    whatever looks like it has a good w3c-y look, is what the developer clicks
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3fbb79fb81f187b1689 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:03</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="TzviyaSiegman" class="mention">@TzviyaSiegman</span> - I'm the SME/compliance officer leading our a11y projects - developing our process framework, which is challenging
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a3fb80c1170e6db718ca burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:03</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I spent a long time not knowing S had been brought back to life
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a404c59a1f2357f200cc burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      StommePoes
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:03</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    some designer guy showed me a newer page
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a457b79fb81f187b16be burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-56600e5c16b6c7089cbd2edc avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/2006752?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      TzviyaSiegman
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:04</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="jasonday" class="mention">@jasonday</span> , maybe we can talk?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a46db79fb81f187b16cb burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5672e91f16b6c7089cbf112d avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/748011?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jasonday
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:05</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="TzviyaSiegman" class="mention">@TzviyaSiegman</span> - sure
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a4ecc59a1f2357f20136 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:07</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    harrumph, VO ignores <code>hr</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a563b79fb81f187b174c burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:09</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    VO doesn't ignore hr
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a568b79fb81f187b1750 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:09</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Which version?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a58e649ae49a694b7154 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:09</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="MichielBijl" class="mention">@MichielBijl</span>: I must be using VO wrong (likely). Yosemite.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a59d8cfda8823613c8f0 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:10</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <span data-link-type="mention" data-screen-name="MichielBijl" class="mention">@MichielBijl</span>: How do you make VO read it?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a5b6712bb6033acf9438 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:10</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    VO+arrow key to it
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a5c4649ae49a694b7172 burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:10</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    should be read out as “horizontal rule, dimmed”
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a5ef80c1170e6db719bb burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:11</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Huh, 's what I did, goes right past it
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4a5f4b0c932986954d6fa burstContinued read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-568bd5be16b6c7089cc140e4 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/217264?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jkva
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 20:11</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I'm going to try again
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4be1a8cfda8823613d2a9 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 21:54</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jiatyan]</strong> We have a long list of links. For those little icons which indicate external links, my developer is using a javascript to scan for off-domain urls and adding a:external-link: after { content: "\016"; cont-family: FontAwesome; } , but she is worried about screen reader not reading this external link icon. Does anyone know of a good CSS solution? Her alternate solution is add &lt;scan class="sr-only"&gt; to all the these external links.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4bff780c1170e6db7242c burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 22:02</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jdan]</strong> <span data-link-type="mention" data-screen-name="jiatyan" class="mention">@jiatyan</span> <span data-link-type="mention" data-screen-name="heydon" class="mention">@heydon</span> has a pure-css solution, but it requires background-image instead of an icon font if that's possible in this case! <a href="http://codepen.io/heydon/pen/pgBBdR" rel="nofollow" target="_blank" class="link">http://codepen.io/heydon/pen/pgBBdR</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4c05d9b88648d7a0922fc burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a69cdc5e0d51bd787b7967 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/1724479?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/1724479?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      jnurthen
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 22:04</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Except of course that doesn't work in Windows High Contrast mode
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4c0629b88648d7a0922ff burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 22:04</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jiatyan]</strong> Ah, clever <span data-link-type="mention" data-screen-name="heydon" class="mention">@heydon</span> . I'll check with my dev. thanks <span data-link-type="mention" data-screen-name="jdan" class="mention">@jdan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4c94d80c1170e6db72724 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a3a8025e0d51bd787b385f avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/5457769?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      MichielBijl
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 22:42</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I think the JS version would be better. On the other hand, it's optional information.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chat-item model-id-56d4ca708cfda8823613d6f3 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div><a class='chat-item__time js-chat-time' title="">Feb 29 22:47</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jiatyan]</strong> Yea, she went for the JS solution by adding aria-label. Thanks folks!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
