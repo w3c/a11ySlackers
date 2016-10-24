@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      A11y Slacker archive 2016-10-23
+    </title>
+    <link href="../../router-archive-chat.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <p>
+      <a href="../../index.html">Archive index</a>
+    </p>
+    <h1>
+      <a href="https://gitter.im/w3c/a11ySlackers"><img src="../../a11yslackers2.png" alt="A11y Slackers"></a> <span>Gitter Channel Archive 23rd of October 2016</span>
+    </h1>
+    <blockquote>
+      <strong>What fresh hell is THIS now?</strong> - <cite>Patrick Lauke</cite>
+    </blockquote>
+    <div id="content-wrapper" class="trpContentPanel">
+      <div id="chat-container">
+        <ol>
+          <li id="chat-item-1" tabindex="-1">
+            <div class="chat-item model-id-580c856256121b9c7eb0035d burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5414349b163965c9bc204468 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Martin Wendt
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @mar10
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-1' title="">Oct 23 09:39</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Hello everybody,
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-2" tabindex="-1">
+            <div class="chat-item model-id-580c978756121b9c7eb02dde burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5414349b163965c9bc204468 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Martin Wendt
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @mar10
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-2' title="">Oct 23 10:57</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      I am the the author of a jQuery tree/treegrid widget (Fancytree) and I would like to add ARIA support.<br>
+                      There is already an option to enable it, and some <code>aria-...</code> attributes are added. However there are still some open questions to me:
+                    </p>
+                    <ul>
+                      <li>Are keyboard shortcuts ( <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#TreeView" rel="nofollow" target="_blank" class="link">as reccomended here</a> ) part of ARIA compliance? I would think, that a page author can decide to use ENTER to activate a node instead of expanding, even if even if the <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#TreeView" rel="nofollow" target="_blank" class="link">https://www.w3.org/TR/wai-aria-practices-1.1/#TreeView</a> proposes another implementation.
+                      </li>
+                      <li>Same for mouse handling: is it mandatory for compliance to implement a dblclick as 'expand node'?
+                      </li>
+                    </ul>
+                    <p>
+                      To my understanding, the most important thing is to assign <code>aria-</code> attibutes to the generated elements in a way such that screen readers handle it nicely.<br>
+                      But then:
+                    </p>
+                    <ul>
+                      <li>what is the authorative approval for a distinct implementation?
+                      </li>
+                      <li>Which screen readers are considered 'reference'
+                      </li>
+                    </ul>
+                    <p>
+                      Maybe someone can give some input, or even help improving the spec: <a href="https://github.com/mar10/fancytree/wiki/SpecAria" rel="nofollow" target="_blank" class="link">https://github.com/mar10/fancytree/wiki/SpecAria</a>
+                    </p>
+                    <p>
+                      Current implementation here: <a href="http://wwwendt.de/tech/fancytree/demo/sample-aria.html" rel="nofollow" target="_blank" class="link">http://wwwendt.de/tech/fancytree/demo/sample-aria.html</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-3" tabindex="-1">
+            <div class="chat-item model-id-580c9ea8278cc54c6f5f0da6 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55a399d85e0d51bd787b371b avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/835859?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      stevefaulkner
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @stevefaulkner
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-3' title="">Oct 23 11:27</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      Hi <span data-link-type="mention" data-screen-name="mar10" class="mention">@mar10</span>
+                    </p>
+                    <blockquote>
+                      <p>
+                        Are keyboard shortcuts ( as reccomended here ) part of ARIA compliance?
+                      </p>
+                    </blockquote>
+                    <p>
+                      The design patterns describe common standard interaction patterns for the most part. Where ever widgets have a desktop application counterpart, the keyboard advice is similar/same to what platform conventions are. In this way interoperability is improved. Users have expectations about how they can interact with UI widgets, suggest it best to code to support those expectations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-4" tabindex="-1">
+            <div class="chat-item model-id-580cb070fb138dce65eef005 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5414349b163965c9bc204468 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Martin Wendt
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @mar10
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-4' title="">Oct 23 12:43</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    100% agreed, and this is a rule for good usability in general (btw. &lt;kbd&gt;ENTER&lt;/kbd&gt; is interpreed as 'rename node' in Mac Finder).<br>
+                    What I would like to know is: what are the <em>requirements</em> for claiming WAI-ARIA compliance of a tree/tree grid? Who can give authorative advice? Are there test suites, or best practices?<br>
+                    I tried a bit and there seems to be different behavior on different screen readers, but I may be wrong.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-5" tabindex="-1">
+            <div class="chat-item model-id-580cb3eab6fc192f56315160 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-5' title="">Oct 23 12:58</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <strong>[karlgroves]</strong> I think that Steve’s answer was the comprehensive one. One of the most important parts of WAI-ARIA is to allow developers to indicate Name, State, Role, and Value to users. When you create a widget that uses ARIA, the assistive technologies can indicate to the user what type of control they’re on and what it is doing. AT will also provide hints to the user on how to interact with that type of control.
+                    </p>
+                    <p>
+                      As Steve said:
+                    </p>
+                    <blockquote>
+                      <p>
+                        Where ever widgets have a desktop application counterpart, the keyboard advice is similar/same to what platform conventions are.
+                      </p>
+                    </blockquote>
+                    <p>
+                      In other words, <strong>not</strong> supplying all the expected keyboard behaviors is basically supplying the user with a broken experience because your widget will not behave in ways they expect
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-6" tabindex="-1">
+            <div class="chat-item model-id-580cbcfe278cc54c6f5f70a9 burstStart read deleted">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5414349b163965c9bc204468 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Martin Wendt
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @mar10
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-6' title="">Oct 23 13:37</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <i>This message was deleted</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-7" tabindex="-1">
+            <div class="chat-item model-id-580cc725015db84e6fbbb2cf burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5414349b163965c9bc204468 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Martin Wendt
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @mar10
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-7' title="">Oct 23 14:20</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <span data-link-type="mention" data-screen-name="zakim-robot" class="mention">@zakim-robot</span>, <span data-link-type="mention" data-screen-name="stevefaulkner" class="mention">@stevefaulkner</span> Maybe my question was not clear enough.<br>
+                      I am not argumenting against keyboard shortcuts. Fancytree already is completely controllable using the keyboard (see <a href="http://wwwendt.de/tech/fancytree/demo/sample-aria.html" rel="nofollow" target="_blank" class="link">the online example</a>).
+                    </p>
+                    <p>
+                      <span data-link-type="mention" data-screen-name="powrsurg" class="mention">@powrsurg</span> <span data-link-type="issue" data-issue="652" data-issue-repo="mar10/fancytree" class="issue">mar10/fancytree#652</span> for incomplete ARIA compliance.<br>
+                      The missing <code>home</code>, <code>end</code>, <code>*</code> shortcuts are easy to implement and make sense, so no problem here.
+                    </p>
+                    <p>
+                      The issue also asked for implementing dblclick as 'expand node', referring to <a href="http://-%20http://www.w3.org/TR/wai-aria-practices/" rel="nofollow" target="_blank" class="link">this spec](https://www.w3.org/WAI/GL/wiki/Using_ARIA_trees).<br>
+                      My understanding was, that dblclick may have other useful implementations - such as editing a node - and if an author chooses to implement it that way, this should not make it "not-ARIA-compliant".<br>
+                      Maybe this topic is obsolete anyway, since the referred-to spec is obsoleted by this spec</a> which does not mention mouse events for trees?
+                    </p>
+                    <p>
+                      I think the keyboard handling is trivial to implement, and it is good to have the ARIA guides here.
+                    </p>
+                    <p>
+                      What is <em>not</em> trivial (in my experience) is to add the right <code>aria</code> attributes in a way, such that all screen readers provide good experience to disabled users.<br>
+                      The current demo (see link above) already adds <code>aria</code>attributes and roles, but is this enough or optimal?<br>
+                      How can I know or improve this?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-8" tabindex="-1">
+            <div class="chat-item model-id-580cc887b6fc192f563193a5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-8' title="">Oct 23 14:26</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <strong>[karlgroves]</strong> &gt; What is <em>not</em> trivial (in my experience) is to add the right <code>aria</code> attributes
+                    </p>
+                    <p>
+                      I can’t understand this line of argument. Of course you can. For instance, if a node is collapsed and then an event is fired to expand it, of course you can modify aria-expanded value accordingly when you change the display property on the children
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-9" tabindex="-1">
+            <div class="chat-item model-id-580cca37278cc54c6f5f9c07 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5414349b163965c9bc204468 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Martin Wendt
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @mar10
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-9' title="">Oct 23 14:33</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I do this already.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-10" tabindex="-1">
+            <div class="chat-item model-id-580cca49015db84e6fbbbcfe burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-10' title="">Oct 23 14:33</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <strong>[karlgroves]</strong> &gt; How can I know or improve this?
+                    </p>
+                    <p>
+                      By following the design pattern completely. It seems like you’re overthinking it here.
+                    </p>
+                    <p>
+                      I don’t want to bore you with the complete history of how this document came to be, but suffice it to say that a shitload of research and work went into the ARIA authoring practices doc and that list of editors and contributors on the doc are some of the brightest in a11y
+                    </p>
+                    <p>
+                      Just. Follow. The. Pattern.<br>
+                      <a href="https://www.w3.org/TR/wai-aria-practices-1.1/" rel="nofollow" target="_blank" class="link">https://www.w3.org/TR/wai-aria-practices-1.1/</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-11" tabindex="-1">
+            <div class="chat-item model-id-580ccb2e305a10335db2ebcb burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> With regard to expecting double click support: I don’t see that in the official APG doc I mentioned above
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-12" tabindex="-1">
+            <div class="chat-item model-id-580ccbafb6fc192f5631a1e5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-12' title="">Oct 23 14:39</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> (Then again, they don’t mention click behavior anywhere)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-13" tabindex="-1">
+            <div class="chat-item model-id-580cccd2b6fc192f5631a711 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5414349b163965c9bc204468 avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/41663?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Martin Wendt
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @mar10
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-13' title="">Oct 23 14:44</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      Main reason for me to enter this chatroom was that last time I tried the markup with different readers (a few years ago), it did not seem very usable and behaved very different on different clients.
+                    </p>
+                    <p>
+                      Ok then, I will look if there are some changes since I last looked into the specs, and try to follow as close as possible, and see what happens - thanks for your time!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-14" tabindex="-1">
+            <div class="chat-item model-id-580ccda0015db84e6fbbcd3d burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <span data-link-type="mention" data-screen-name="zakim-robot" class="mention">@zakim-robot</span> I think that <span data-link-type="mention" data-screen-name="powrsurg" class="mention">@powrsurg</span> referred to (just guessing)
+                    </p>
+                    <blockquote>
+                      <p>
+                        NOTE: Double-clicking on a parent node will toggle its expanded or collapsed state.
+                      </p>
+                    </blockquote>
+                    <p>
+                      here <a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_trees" rel="nofollow" target="_blank" class="link">https://www.w3.org/WAI/GL/wiki/Using_ARIA_trees</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-15" tabindex="-1">
+            <div class="chat-item model-id-580cce37b6fc192f5631ab3d burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-15' title="">Oct 23 14:50</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <strong>[karlgroves]</strong> Generally speaking, you should anticipate weirdness across AT on certain widget types - including a difference in how it behaves with the screen reader on vs. off. I’ve been bitten by this a handful of times with VO, specifically. You may need to wrap the tree in a DIV with role=application to get it to work reliably.
+                    </p>
+                    <p>
+                      Just a note regarding that doc you cite: take a look at the disclaimer at the top of the page.
+                    </p>
+                    <p>
+                      That being said, I’m interested in seeing the folks from APG weigh in (cc <span data-link-type="mention" data-screen-name="jamesn" class="mention">@jamesn</span> <span data-link-type="mention" data-screen-name="stevef" class="mention">@stevef</span>)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-16" tabindex="-1">
+            <div class="chat-item model-id-580ceabd305a10335db357a5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-16' title="">Oct 23 16:52</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[wendykelly]</strong> Good morning :) Yesterday I watched <span data-link-type="mention" data-screen-name="karlgroves" class="mention">@karlgroves</span> presentation at Fronteers ( <a href="https://vimeo.com/163074780" rel="nofollow" target="_blank" class="link">https://vimeo.com/163074780</a>) then watched <span data-link-type="mention" data-screen-name="marcysutton" class="mention">@marcysutton</span> and Estelle Wyle’s presentations as well…<br>
+                    So then, of course, I watched the set on perceived time and visual performance….<br>
+                    I am curious if anyone would like to help me understand the relationship between the two ideas.<br>
+                    More to the point: do a11y and visual performance best practices play well together?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-17" tabindex="-1">
+            <div class="chat-item model-id-580cf34956121b9c7eb159e1 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-17' title="">Oct 23 17:28</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[marcysutton]</strong> <span data-link-type="mention" data-screen-name="wendykelly" class="mention">@wendykelly</span>: they do to a point. By optimizing assets to get pages to load fast, you will undoubtedly make them ready to use sooner. In my talk, however, I argued that perceived performance is only visual (like the DIV outlines added to facebook on load) and that we should also test for functional performance. i.e. how quickly can I start typing?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-18" tabindex="-1">
+            <div class="chat-item model-id-580cf6defb138dce65effb05 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-18' title="">Oct 23 17:43</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[marcysutton]</strong> I did another version of that talk that was twice as long, might be useful? <a href="https://www.youtube.com/watch?v=RkbyP-OJRgw" rel="nofollow" target="_blank" class="link">https://www.youtube.com/watch?v=RkbyP-OJRgw</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-19" tabindex="-1">
+            <div class="chat-item model-id-580d02af5af5969e7ef2ce60 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-19' title="">Oct 23 18:34</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[marcysutton]</strong> Ooh I thought of this too–Tim Kadlec and Katie Kovalcin have a podcast all about performance and they kindly invited me to chat with them about accessibility <a href="https://pathtoperf.com/2016/09/29/12-with-marcy-sutton.html" rel="nofollow" target="_blank" class="link">https://pathtoperf.com/2016/09/29/12-with-marcy-sutton.html</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-20" tabindex="-1">
+            <div class="chat-item model-id-580d038ffb138dce65f02a05 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[wendykelly]</strong> Thank you!!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-21" tabindex="-1">
+            <div class="chat-item model-id-580d1d69577f2c22790ddc77 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-21' title="">Oct 23 20:28</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[miwayha]</strong> dumb voiceover question: whenever i have voiceover on and i’m trying to work this autocomplete widget in safari, the up and down arrow keys don’t work, but in chrome they do. any thoughts? <a href="http://jqueryui.com/resources/demos/autocomplete/default.html" rel="nofollow" target="_blank" class="link">http://jqueryui.com/resources/demos/autocomplete/default.html</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-22" tabindex="-1">
+            <div class="chat-item model-id-580d1d8fb6fc192f5632cae3 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[miwayha]</strong> it’s not just that autocomplete widget: it’s any accessible autocomplete widget i’ve been able to find: arrows work fine with VO + Chrome, not with VO + Safari
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
