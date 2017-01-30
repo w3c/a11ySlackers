@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      A11y Slacker archive 2017-01-29
+    </title>
+    <link href="../../router-archive-chat.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <p>
+      <a href="../../index.html">Archive index</a>
+    </p>
+    <h1>
+      <a href="https://gitter.im/w3c/a11ySlackers"><img src="../../a11yslackers2.png" alt="A11y Slackers"></a> <span>Gitter Channel Archive 29th of January 2017</span>
+    </h1>
+    <blockquote>
+      <strong>What fresh hell is THIS now?</strong> - <cite>Patrick Lauke</cite>
+    </blockquote>
+    <div id="content-wrapper" class="trpContentPanel">
+      <div id="chat-container">
+        <ol>
+          <li id="chat-item-1" tabindex="-1">
+            <div class="chat-item model-id-588dc21161e516c1579299c5 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-57376588c43b8c601972ec6f avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/7879528?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/7879528?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Mev-Rael
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @Mevrael
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-1' title="">Jan 29 10:21</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    How would you make a photo upload within a popup where you have to move a selected area to crop/resize an image accessible? What role this selected area should have, for example? And how to resize it using keyboard? I've seen shift + arrow keys was using there, are there any guidlines, standards for that?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-2" tabindex="-1">
+            <div class="chat-item model-id-588e1decc0f28dd862599abc burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Mallory
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @StommePoes
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-2' title="">Jan 29 16:53</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <ol>
+                      <li>I would offer that a user can simply upload the photo and hit enter, where no cropping/anything is done, and the image is loaded as-is.
+                      </li>
+                      <li>For cropping, there are usually two boxes: one representing the original/current image. I dunno if it would have a role but it would have text inside naming it as the original; the other box is representing what will be kept.
+                      </li>
+                      <li>of the box-of-keeps, I believe that whole box should be focusable as itself so users can use arrows to move it around in any direction, similar to moving around in a grid.
+                      </li>
+                      <li>I would allow 4 controls to represent either each of the sides, or each of the corners, where again arrow keys can allow these to move around to change either the side or the corner position.
+                      </li>
+                      <li>It might make sense to have a live region around some visible text stating the proposed image's new dimensions, which should change as the edges or corners are manipulated.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-3" tabindex="-1">
+            <div class="chat-item model-id-588e1ea71e4d4bd962aa03f7 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    I can't think of any appropriate roles for this sort of thing, and I don't see them coming along until the specs start dealing with web-based image editors more. Roles for dragging and dropping have been removed from aria 1.0, and the only other roles that might work would be very generic, like region. I'm not entirely certain I would use any roles. I would have probably toggle buttons representing the 4 edges/corners: toggle-on meaning arrows move things, toggle-off means they don't, and to hijack arrows, an application role might be needed. The whole image cropping thing could be an application role but then you'd have to be really careful with text anywhere as you're removing navigation abilities from SRs.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-4" tabindex="-1">
+            <div class="chat-item model-id-588e1f1e96a565f8440a9bac burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-57376588c43b8c601972ec6f avatar-s offline">
+                      <img src="https://avatars2.githubusercontent.com/u/7879528?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/7879528?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Mev-Rael
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @Mevrael
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-4' title="">Jan 29 16:58</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    Fow now I stayed with role="button", with mouse you click and move cursor, you use wheel to resize. With keyboard 4 arrow keys for moving and shift+arrow keys for resizing, enter save changes, close dialog and update the original preview image nex to file upload input
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-5" tabindex="-1">
+            <div class="chat-item model-id-588e1f2e96a565f8440a9bae burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    probably aria label will be enough here
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-6" tabindex="-1">
+            <div class="chat-item model-id-588e63384c04e9a44e46e5fa burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55b087cb0fc9f982beaaa4f6 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/136210?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Mallory
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @StommePoes
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-6' title="">Jan 29 21:48</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    As a sighted keyboarder, I would have no idea what to use. We're going to be building an avatar uploader and resizer in the coming months and one of the things I will insist on is visible instructions for sighted keyboarders.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-7" tabindex="-1">
+            <div class="chat-item model-id-588e63504c04e9a44e46e687 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    The arrows would probably be my first attemp at mystery-meating though.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
