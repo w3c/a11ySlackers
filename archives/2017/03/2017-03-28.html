@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      A11y Slacker archive 2017-03-28
+    </title>
+    <link href="../../router-archive-chat.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <p>
+      <a href="../../index.html">Archive index</a>
+    </p>
+    <h1>
+      <a href="https://gitter.im/w3c/a11ySlackers"><img src="../../a11yslackers2.png" alt="A11y Slackers"></a> <span>Gitter Channel Archive 28th of March 2017</span>
+    </h1>
+    <blockquote>
+      <strong>What fresh hell is THIS now?</strong> - <cite>Patrick Lauke</cite>
+    </blockquote>
+    <div id="content-wrapper" class="trpContentPanel">
+      <div id="chat-container">
+        <ol>
+          <li id="chat-item-1" tabindex="-1">
+            <div class="chat-item model-id-58d9b98e8e4b63533d6de050 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-1' title="">Mar 28 01:17</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[elliottregan]</strong> <span data-link-type="mention" data-screen-name="karlgroves" class="mention">@karlgroves</span> <span data-link-type="mention" data-screen-name="backwardok" class="mention">@backwardok</span> I’ve never done this before, but I’d love to brainstorm about it. My first approach would probably be to read a list of all the visible markers out to the user, then provide the address and other information if the users selects one. If that’s not possible with the map’s markup, then you might need to build some hidden, alternative DOM content.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-2" tabindex="-1">
+            <div class="chat-item model-id-58d9b9d8408f90be6661b392 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[backwardok]</strong> I also kind of wonder, since addresses are only useful if the user knows the area well, whether or not there should be some other kind of grouping that provides extra meaning
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-3" tabindex="-1">
+            <div class="chat-item model-id-58d9b9e90e4137042ab925b0 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[backwardok]</strong> but that requires a fair of knowledge of the data set you’re using
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-4" tabindex="-1">
+            <div class="chat-item model-id-58d9bb1fad849bcf4226426f burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-4' title="">Mar 28 01:23</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[backwardok]</strong> trying to poke around google maps’s api to see if there’s a way to get more information about a general location (like neighborhood)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-5" tabindex="-1">
+            <div class="chat-item model-id-58d9bb6c08c00c092a211746 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[elliottregan]</strong> I’d treat that the same as with visual users. Addresses are how we’ve been doing it for decades, so I assume that is at least a good base to start from. That’s not to say there aren’t better ways of conveying location, but there is only so much information you can ascertain from a map. Crosstreets are helpful in large cities, as are neighborhoods. Proximity to landmarks and stuff like that, but I don’t think those data need to me added just for screen readers.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-6" tabindex="-1">
+            <div class="chat-item model-id-58d9bd440e4137042ab931a9 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-6' title="">Mar 28 01:32</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[backwardok]</strong> i agree that addresses are also useful, but i don’t think it’s a sufficient replacement for what that marker is representing on a map - as a visual user, i can tell that there are some markers that are clustered together, or that they’re in a particular neighborhood, or that they’re near something that i recognize
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-7" tabindex="-1">
+            <div class="chat-item model-id-58d9bd530e4137042ab931f3 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[backwardok]</strong> if i’m searching in an area that i’m not familiar with, the address wouldn’t help me very much
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-8" tabindex="-1">
+            <div class="chat-item model-id-58d9bdd54cb8d0917332c2f2 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[elliottregan]</strong> ah, that’s a good point
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-9" tabindex="-1">
+            <div class="chat-item model-id-58d9bef48bb56c2d114ce6ec burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-9' title="">Mar 28 01:40</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[cordelia]</strong> Touch interactions/explorations would help with discerning clusters, but with keyboard input it’s much trickier
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-10" tabindex="-1">
+            <div class="chat-item model-id-58d9bfe78bb56c2d114cea32 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[elliottregan]</strong> What helps me is to break the information down into a sentence, then figure out how to best organize that in DOM content. ex) "There are [number] [map markers: coffee shops, points of interest, etc.] within [8 blocks, 20min walk] of [point of reference: address, cross streets, neighborhood]."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-11" tabindex="-1">
+            <div class="chat-item model-id-58d9c02408c00c092a2125c8 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-11' title="">Mar 28 01:45</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[elliottregan]</strong> You just need to make sure that your [point of reference] can be understood.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-12" tabindex="-1">
+            <div class="chat-item model-id-58d9c068b402a53211bc15b5 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[elliottregan]</strong> To be honest, I have no idea how a blind person would navigate an unfamiliar area.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-13" tabindex="-1">
+            <div class="chat-item model-id-58d9d79d7ea420cc4210ed69 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-13' title="">Mar 28 03:25</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[caesar]</strong> I wonder if someone can take "what3words" and make an accessible map solution out of it... <a href="https://what3words.com/" rel="nofollow" target="_blank" class="link">https://what3words.com/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-14" tabindex="-1">
+            <div class="chat-item model-id-58da158e0e4137042aba701a burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-5877a847d73408ce4f4312b0 avatar-s offline">
+                      <img src="https://avatars0.githubusercontent.com/u/902441?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/902441?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      Serge Huijben
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @thehuijb
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-14' title="">Mar 28 07:49</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    looking for best practise, should I include aria-label/aria-labelledby on my &lt;article role="article"&gt;?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-15" tabindex="-1">
+            <div class="chat-item model-id-58da295cf22385553de3e8d9 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-15' title="">Mar 28 09:14</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[enwin]</strong> I was looking at <a href="http://www.html5accessibility.com" rel="nofollow" target="_blank" class="link">http://www.html5accessibility.com</a> and the support of html5 markup on IE11. Most of the HTML5 new element are marked as not mapped. Does it means that I have to keep the role attribute on those elements to be sure they are mapped or ATs do the work for me?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-16" tabindex="-1">
+            <div class="chat-item model-id-58da5873b52518ed4db640e3 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-16' title="">Mar 28 12:34</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[michiel]</strong> enwin: if HTML elements aren’t mapped you’ll have to manually add the appropriate ARIA attributes (role, aria-*).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-17" tabindex="-1">
+            <div class="chat-item model-id-58da83cd408f90be66651701 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-17' title="">Mar 28 15:39</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[jbuller]</strong> A query from a colleague: “What do you think about embedding documents in PowerPoint from an accessibility point of view?”<br>
+                    The object doesn’t appear in Outline view. It can be given alt text which can be read by Voiceover. in editing mode. I’ve not found how to read slides in Slideshow mode.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-18" tabindex="-1">
+            <div class="chat-item model-id-58da93284cb8d09173365419 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-18' title="">Mar 28 16:45</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[albert]</strong> <span data-link-type="mention" data-screen-name="karlgroves" class="mention">@karlgroves</span> <span data-link-type="mention" data-screen-name="backwardok" class="mention">@backwardok</span> no clue regarding google maps, but the beauty of open street maps is that its open source and can be made accessible. <strong>steps on soap box</strong> open source is better for everyone. especially in this case.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-19" tabindex="-1">
+            <div class="chat-item model-id-58da93627ea420cc42145130 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[albert]</strong> there are also fragmentations in osm that are working towards physical a11y. wheelmaps based in germany is first one to pop into my head. have never, not once, seen anything like it in the google maps community.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-20" tabindex="-1">
+            <div class="chat-item model-id-58da956e7ea420cc42145fc0 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-20' title="">Mar 28 16:55</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> <span data-link-type="mention" data-screen-name="albert" class="mention">@albert</span> unfortunately I need to <strong>fix</strong> a google map. If this was from scratch I’d start with Leaflet, though I still haven’t seen the markers be accessible, I think it’d probably be less janky to hack if needed
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-21" tabindex="-1">
+            <div class="chat-item model-id-58da95a4b52518ed4db79403 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[albert]</strong> <span data-link-type="mention" data-screen-name="karlgroves" class="mention">@karlgroves</span> can i see said map?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-22" tabindex="-1">
+            <div class="chat-item model-id-58da95cb4cb8d09173366338 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> Nope. Client map. ;)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-23" tabindex="-1">
+            <div class="chat-item model-id-58da95ed7ea420cc4214627a burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[albert]</strong> welp. which parts are inaccessible? just the markers? i know you can use custom overlays to get around that. at least for keyboards accessibility
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-24" tabindex="-1">
+            <div class="chat-item model-id-58da968bb402a53211bfd781 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <strong>[karlgroves]</strong> Currently all interactive bits of Google maps are inaccessible. Sorry to the Googlers here, but the maps team really doesn’t appear to give a damn about a11y, because they could <strong>easily</strong> provide access to this stuff.
+                    </p>
+                    <p>
+                      From a “hacking it” perspective, it is pretty easy (though a bit janky) to fix the pan/ zoom functionality and the default controls
+                    </p>
+                    <p>
+                      Getting to the bits necessary to fix markers is another thing altogether
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-25" tabindex="-1">
+            <div class="chat-item model-id-58da96b1b402a53211bfd902 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-25' title="">Mar 28 17:00</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[khutchins]</strong> I’ve been playing around with creating an accessible map using Esri’s JSAPI. At this point I’ve been working to duplicate (and extend a bit) the behavior google maps has where you can navigate the map content using a search box. This is just a quick demo app but I think the conversation around how to make a map accessible is fascinating and I think there is definitely work we can do to make it a better experience for all users. <a href="https://github.com/kellyhutchins/a11y-map" rel="nofollow" target="_blank" class="link">https://github.com/kellyhutchins/a11y-map</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-26" tabindex="-1">
+            <div class="chat-item model-id-58dac27cb52518ed4db86d91 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-26' title="">Mar 28 20:07</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[david]</strong> Happened across this on facebook. <a href="http://www.businessinsider.com/google-maps-is-now-wheelchair-friendly-accessible-20-percent-time-employee-project-2016-12" rel="nofollow" target="_blank" class="link">http://www.businessinsider.com/google-maps-is-now-wheelchair-friendly-accessible-20-percent-time-employee-project-2016-12</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-27" tabindex="-1">
+            <div class="chat-item model-id-58dac866b402a53211c0dbca burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-27' title="">Mar 28 20:32</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> <span data-link-type="mention" data-screen-name="karlgroves" class="mention">@karlgroves</span> I take it this is an embedded map?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-28" tabindex="-1">
+            <div class="chat-item model-id-58dac87bf22385553de720d5 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> yes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-29" tabindex="-1">
+            <div class="chat-item model-id-58dac88c8e4b63533d72a091 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> Is <a href="http://maps.google.com" rel="nofollow" target="_blank" class="link">maps.google.com</a> any better?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-30" tabindex="-1">
+            <div class="chat-item model-id-58dac89a4cb8d09173375f18 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> (just figuring out who to bug - not that it'll help you in the short term)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-31" tabindex="-1">
+            <div class="chat-item model-id-58dac8de08c00c092a25d9e4 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> No. Bad &amp; different. ;)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-32" tabindex="-1">
+            <div class="chat-item model-id-58dac9488e4b63533d72a4ee burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> <a href="http://Maps.google.com" rel="nofollow" target="_blank" class="link">Maps.google.com</a>: <code>&lt;body tabindex=”-1” …&gt;</code> (trollface emoji)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-33" tabindex="-1">
+            <div class="chat-item model-id-58dac97b4cb8d09173376352 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> <em>closes chrome devtools and walks away</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-34" tabindex="-1">
+            <div class="chat-item model-id-58dac9c98bb56c2d11519ca2 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-34' title="">Mar 28 20:38</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> FWIW, at least the zoom controls and stuff use real <code>&lt;button&gt;</code> elements and <code>aria-label</code> which is not the case on embedded maps
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-35" tabindex="-1">
+            <div class="chat-item model-id-58dac9fc8bb56c2d11519dd4 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> <a href="http://maps.google.com" rel="nofollow" target="_blank" class="link">maps.google.com</a> seems at least fairly keyboard operable
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-36" tabindex="-1">
+            <div class="chat-item model-id-58daca0708c00c092a25de5c burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> Agreed. But on <a href="http://maps.google.com" rel="nofollow" target="_blank" class="link">maps.google.com</a> they still don’t have any keyboard access to markers - which seems super trivial to fix
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-37" tabindex="-1">
+            <div class="chat-item model-id-58daca348fcce56b20a95b1a burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> Hm - I can tab through the markers on a search result
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-38" tabindex="-1">
+            <div class="chat-item model-id-58daca380e4137042abe0d84 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> What markers do you mean?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-39" tabindex="-1">
+            <div class="chat-item model-id-58daca51f22385553de72975 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> Inside the map. The “pins” for the locations that matched your results
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-40" tabindex="-1">
+            <div class="chat-item model-id-58daca6f8bb56c2d11519fad burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> Which is weird because once you have a result open you can tab through it fine
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-41" tabindex="-1">
+            <div class="chat-item model-id-58daca7ead849bcf422b1bf5 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> If you tab through the list (let's not discuss that we're tabbing through a list) it highlights each marker in turn
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-42" tabindex="-1">
+            <div class="chat-item model-id-58daca8aad849bcf422b1c2d burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> Then I can press enter to open the full listing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-43" tabindex="-1">
+            <div class="chat-item model-id-58dacaa37ea420cc42156e00 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> yeah, when the panel is showing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-44" tabindex="-1">
+            <div class="chat-item model-id-58dacaa54cb8d09173376774 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> highlights the markers on the map, I mean
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-45" tabindex="-1">
+            <div class="chat-item model-id-58dacac50e4137042abe1061 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> I see
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-46" tabindex="-1">
+            <div class="chat-item model-id-58dacb20408f90be6666824f burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-46' title="">Mar 28 20:44</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> In my case, a customer has an embedded map. The default pan/zoom controls aren’t accessible (whereas they are on <a href="http://maps.google.com" rel="nofollow" target="_blank" class="link">maps.google.com</a>) and the pins/ markers aren’t accessible either.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-47" tabindex="-1">
+            <div class="chat-item model-id-58dacb364cb8d09173376a40 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> It works well when the sidebar is open at least, and has quite sophisticated keyboard controls for panning and exploring the map
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-48" tabindex="-1">
+            <div class="chat-item model-id-58dacb418e4b63533d72b036 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[alice]</strong> Yeah let me check up on the embedded map thin
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-49" tabindex="-1">
+            <div class="chat-item model-id-58dacb55f22385553de72cfc burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[karlgroves]</strong> Thanks
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
