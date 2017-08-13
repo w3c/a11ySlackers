@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      A11y Slacker archive 2017-08-12
+    </title>
+    <link href="../../router-archive-chat.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <p>
+      <a href="../../index.html">Archive index</a>
+    </p>
+    <h1>
+      <a href="https://gitter.im/w3c/a11ySlackers"><img src="../../a11yslackers2.png" alt="A11y Slackers"></a> <span>Gitter Channel Archive 12th of August 2017</span>
+    </h1>
+    <blockquote>
+      <strong>What fresh hell is THIS now?</strong> - <cite>Patrick Lauke</cite>
+    </blockquote>
+    <div id="content-wrapper" class="trpContentPanel">
+      <div id="chat-container">
+        <ol>
+          <li id="chat-item-1" tabindex="-1">
+            <div class="chat-item model-id-598e6debbc46472974762a9c burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-1' title="">Aug 12 02:54</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <strong>[johnkmcnabb]</strong> Can someone with Ember experience please tell me if this code is valid? It looks odd to me - there's a ui-checkbox tag with role="checkbox", and nested inside of that is a native input tag with type="checkbox". Isn't it strange to have a checkbox within a checkbox?
+                    </p>
+                    <p>
+                      &lt;div class="checkbox-wrapper"&gt;<br>
+                      &lt;div id="ember859" class="ember-view ui-set-checkbox"&gt;<br>
+                      &lt;ui-checkbox id="ember870" role="checkbox" aria-label="Don't show this again" aria-checked="false" tabindex="0" class="ember-view ui-checkbox ui-display-default"&gt;<br>
+                      &lt;input type="checkbox" tabindex="0" aria-hidden="true" id="ember870-input"&gt;<br>
+                      &lt;div class="ui-wrapper"&gt;<br>
+                      &lt;!----&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;/ui-checkbox&gt;<br>
+                      &lt;label class="ui-partial-label" id="ember870-label" for="ember870-input"&gt;<br>
+                      Don't show this again<br>
+                      &lt;!----&gt;<br>
+                      &lt;/label&gt;<br>
+                      &lt;!----&gt;<br>
+                      &lt;!----&gt;<br>
+                      &lt;div id="ember879" aria-live="assertive" class="ember-view ui-set-messages"&gt;<br>
+                      &lt;!----&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;/div&gt;
+                    </p>
+                    <p>
+                      This code seems to be causing problems on some browser + screen reader combinations, but the Ember developer says it works with most browsers and screen readers, so it must be fine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-2" tabindex="-1">
+            <div class="chat-item model-id-598e6e5d1c8697534aadaaa7 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> Custom elements don't mean anything to AT.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-3" tabindex="-1">
+            <div class="chat-item model-id-598e6e7cee5c9a4c5fb1d702 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> I suspect that this is fine.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-4" tabindex="-1">
+            <div class="chat-item model-id-598e6ece162adb6d2eea0021 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> However, it depends on whatever the ui-checkbox is set up to do.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-5" tabindex="-1">
+            <div class="chat-item model-id-598e6f48210ac26920763a7b burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-5' title="">Aug 12 03:00</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> (Note: that code isn't nearly enough to analyze correctness.)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-6" tabindex="-1">
+            <div class="chat-item model-id-598e71262723db8d5e97a176 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-6' title="">Aug 12 03:08</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[johnkmcnabb]</strong> Hmmm, thanks. I would never have coded a checkbox inside another checkbox, but I'm not an Ember developer.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-7" tabindex="-1">
+            <div class="chat-item model-id-598e7139c101bc4e3a0d944e burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> Note that it's not a checkbox in a checkbox.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-8" tabindex="-1">
+            <div class="chat-item model-id-598e715576a757f808980f2a burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> It's a custom element wrapping a checkbox.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-9" tabindex="-1">
+            <div class="chat-item model-id-598e718d1c8697534aadb309 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[johnkmcnabb]</strong> No? What about the role="checkbox" attribute? Doesn't that specify a checkbox, at least semantically?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-10" tabindex="-1">
+            <div class="chat-item model-id-598e718f80d90ca024ef00a8 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> (This has little to nothing to do with Ember.)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-11" tabindex="-1">
+            <div class="chat-item model-id-598e72d61c8697534aadb923 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-11' title="">Aug 12 03:15</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[johnkmcnabb]</strong> I'm not sure what that custom element will turn into (that depends on Ember, right?), but the actual input tag with type="checkbox" has aria-hidden="true" which does impact AT.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-12" tabindex="-1">
+            <div class="chat-item model-id-598e75c9c101bc4e3a0da0bc burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-12' title="">Aug 12 03:28</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <p>
+                      <strong>[johnkmcnabb]</strong> I'm sorry I couldn't share more of the code, but it's not easy to get content from my work laptop (it's completely locked down).
+                    </p>
+                    <p>
+                      But from this code it appears to me that the developer is creating an Ember checkbox and a native checkbox - each with partial functionality - rather than creating one checkbox that has everything we need.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-13" tabindex="-1">
+            <div class="chat-item model-id-598ea32980d90ca024ef8971 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-13' title="">Aug 12 06:41</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> That ui-checkbox is not an Ember-supplied custom element. You're looking at a rendered output (made clear by those strange comment placeholders). It's coming as the output from an Ember component whose tag name has been bound to ui-checkbox, but behavior is fully custom to whatever the dev is using for that component (possibly hand-rolled, possibly from an addon).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-14" tabindex="-1">
+            <div class="chat-item model-id-598ea3e176a757f808989a01 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> Without seeing the backing JS I can't tell what all it does, or why it was coded this way, and what problems the code is intended to solve.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-15" tabindex="-1">
+            <div class="chat-item model-id-598ea474210ac2692076ce49 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-15' title="">Aug 12 06:47</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[nathanhammond]</strong> In other words, evaluate this on its merits at use, file bugs for bad AT behavior.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-16" tabindex="-1">
+            <div class="chat-item model-id-598ef92780d90ca024f08c97 burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-16' title="">Aug 12 12:48</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[johnkmcnabb]</strong> OK, thanks.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-17" tabindex="-1">
+            <div class="chat-item model-id-598f60a5614889d47540f6ce burstStart read">
+              <div class='chat-item__container'>
+                <div class='chat-item__aside'>
+                  <div class="chat-item__avatar">
+                    <div class="trpDisplayPicture avatar-55aace398a7b72f55c3fc7b0 avatar-s offline">
+                      <img src="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/13398168?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__details'>
+                    <div class='chat-item__from js-chat-item-from'>
+                      zakim-robot
+                    </div>
+                    <div class='chat-item__username js-chat-item-from'>
+                      @zakim-robot
+                    </div><a class='chat-item__time js-chat-time' href='#chat-item-17' title="">Aug 12 20:10</a>
+                  </div>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[cameron]</strong> Friends, I'm working on a fix for Ruby on Rails to stop generating alt text based on filename
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-18" tabindex="-1">
+            <div class="chat-item model-id-598f60cd162adb6d2eece6ab burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[cameron]</strong> the catch is that it'll cause failures automated testing tools. Failures that are correct but otherwise new.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-19" tabindex="-1">
+            <div class="chat-item model-id-598f60f6ee5c9a4c5fb4d6b1 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[cameron]</strong> this might be surprising to developers to have new failures, and so I wanted to gauge here what folks are doing for testing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-20" tabindex="-1">
+            <div class="chat-item model-id-598f6128ee5c9a4c5fb4d739 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[cameron]</strong> who's using automated accessibility in Rails apps?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-21" tabindex="-1">
+            <div class="chat-item model-id-598f612c76a757f8089aff77 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[cameron]</strong> If you're in Slack you can post a reaction to this message, or else respond
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="chat-item-22" tabindex="-1">
+            <div class="chat-item model-id-598f617980d90ca024f1f2d1 burstContinued read">
+              <div class='chat-item__container'>
+                <div class="chat-item__actions js-chat-item-actions"></div>
+                <div class='chat-item__content'>
+                  <div class='chat-item__text js-chat-item-text'>
+                    <strong>[cameron]</strong> or any kind of accessibility linting/QA for that matter
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
